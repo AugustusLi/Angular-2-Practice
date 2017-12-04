@@ -4,8 +4,7 @@ import { LoggingService } from '../logging.service';
 @Component({
   selector: 'app-directory',
   templateUrl: './directory.component.html',
-  styleUrls: ['./directory.component.css'],
-  providers: [LoggingService]
+  styleUrls: ['./directory.component.css']
 })
 export class DirectoryComponent implements OnInit {
 

@@ -9,6 +9,7 @@ import { DirectoryComponent } from './directory/directory.component';
 import { FilterPipe } from './filter.pipe';
 import { RouterModule } from '@angular/router';
 import { APP_ROUTES } from './app.routes';
+import { LoggingService } from './logging.service';
 
 
 @NgModule({
@@ -24,7 +25,7 @@ import { APP_ROUTES } from './app.routes';
     HttpModule,
     RouterModule.forRoot(APP_ROUTES)
   ],
-  providers: [],
+  providers: [LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
